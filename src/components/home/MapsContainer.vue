@@ -1,7 +1,7 @@
 <template>
     <div id="maps-container">
-        <div class="maps-container__header">
-            <v-checkbox
+       <!-- <div class="maps-container__header">
+           <v-checkbox
                 v-model="showAreas"
                 :label="$t('Home.HomeCardMode.area')"
                 dense
@@ -24,7 +24,7 @@
                 hide-details
                 width="50px"
             />
-        </div>
+        </div>-->
         <template 
             v-if="showAreas"
         >
@@ -96,7 +96,7 @@ export default {
     data() {
         return {
             search: '',
-            showAreas: true,
+            showAreas: false,
             showMaps: true,
         };
     },

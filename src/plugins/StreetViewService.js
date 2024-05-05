@@ -130,7 +130,7 @@ class StreetViewService {
                 properties = feature.properties;
                 if (feature.geometry.type === 'Point') {
                     position = feature.geometry.coordinates;
-                    radius = 50;
+                    radius = 1500;
                 } else {
                     radius = getMaxDistanceBbox(bbox(feature)) * 100;
                     position = randomPositionInPolygon(feature);

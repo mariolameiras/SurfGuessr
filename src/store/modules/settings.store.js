@@ -9,17 +9,17 @@ import * as MutationTypes from '../mutation-types';
 
 export class GameSettings {
     constructor(
-        _allPanorama = false,
+        _allPanorama = true,
         _timeLimitation = 0,
         _mode = GAME_MODE.CLASSIC,
         _timeAttack = false,
         _zoomControl = true,
-        _moveControl = true,
+        _moveControl = false,
         _panControl = true,
         _countdown = 0,
         _scoreMode = SCORE_MODE.NORMAL,
         _areaParams = null,
-        _optimiseStreetView = true,
+        _optimiseStreetView = false,
         _nbRound = 5,
         _scoreLeaderboard = true,
         _guessedLeaderboard = true,

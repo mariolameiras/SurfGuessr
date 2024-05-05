@@ -81,7 +81,7 @@
                         class="d-flex justify-space-around flex-row mb-0 mt-0"
                     >
                         <v-col>
-                            <v-checkbox
+                            <v-checkbox disabled
                                 :input-value="gameSettings.zoomControl"
                                 @change="
                                     (zoomControl) =>
@@ -90,7 +90,7 @@
                                 :label="$t('CardRoomSettings.allowZoom')"
                                 hide-details
                             />
-                            <v-checkbox
+                            <v-checkbox disabled
                                 :input-value="gameSettings.moveControl"
                                 @change="
                                     (moveControl) =>
@@ -99,7 +99,7 @@
                                 :label="$t('CardRoomSettings.allowMove')"
                                 hide-details
                             />
-                            <v-checkbox
+                            <v-checkbox disabled
                                 :input-value="gameSettings.panControl"
                                 @change="
                                     (panControl) =>
@@ -108,7 +108,7 @@
                                 :label="$t('CardRoomSettings.allowPan')"
                                 hide-details
                             />
-                            <v-checkbox
+                            <v-checkbox disabled
                                 class="mt-2"
                                 :input-value="gameSettings.allPanorama"
                                 @change="
@@ -120,7 +120,7 @@
                                 "
                                 hide-details
                             />
-                            <v-checkbox
+                            <v-checkbox disabled
                                 :input-value="gameSettings.optimiseStreetView"
                                 @change="
                                     (optimiseStreetView) =>
